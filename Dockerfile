@@ -32,7 +32,7 @@ RUN set -ex; \
     rm -rf /var/lib/apt/lists/*; \
     \
     docker-php-ext-configure gd --with-png-dir=/usr/include/ --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/; \
-    docker-php-ext-install gd soap bcmath mysqli opcache pdo_mysql json zip;
+    docker-php-ext-install gd soap bcmath mysqli opcache pdo_mysql pdo_pgsql json zip;
 
 #Install Memcached
 RUN { \
