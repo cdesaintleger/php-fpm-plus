@@ -6,6 +6,7 @@ RUN set -ex; \
     apt-get update; \
     apt-get install -y \
         git \
+        python \
         python-pip \
         python-jinja2 \
         openssh-client \
